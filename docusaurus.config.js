@@ -56,6 +56,24 @@ const config = {
         },
       }),
     ],
+    // include redocusaurus
+    [
+      'redocusaurus',
+      {
+        // Plugin Options for loading OpenAPI files
+        specs: [
+          {
+            id: 'clickhouse-cloud-api',
+            spec: 'https://api.control-plane.clickhouse-staging.com/v1',
+          },
+        ],
+        // Theme Options for modifying how redoc renders them
+        theme: {
+          // Change with your site colors
+          primaryColor: '#46B29D',
+        },
+      },
+    ],
   ],
 
   themeConfig:
